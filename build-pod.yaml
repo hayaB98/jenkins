@@ -10,5 +10,7 @@ spec:
       image: nginx
       ports:
         - name: web
-          containerPort: 80
+          ports:
+            - containerPort: 8080
+            - containerPort: 50000
           protocol: TCP
